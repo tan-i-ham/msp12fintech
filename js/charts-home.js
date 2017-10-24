@@ -1,5 +1,5 @@
 /*global $, document, Chart, LINECHART, data, options, window*/
-$(document).ready(function () {
+$(document).ready(function() {
 
     'use strict';
 
@@ -20,8 +20,7 @@ $(document).ready(function () {
         },
         data: {
             labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July"],
-            datasets: [
-                {
+            datasets: [{
                     label: "My First dataset",
                     fill: true,
                     lineTension: 0.3,
@@ -80,25 +79,24 @@ $(document).ready(function () {
         type: 'doughnut',
         data: {
             labels: [
-                "First",
-                "Second",
-                "Third"
+                "鴻海 2317",
+                "台積電 2330",
+                "微星 2377"
             ],
-            datasets: [
-                {
-                    data: [300, 50, 100],
-                    borderWidth: [1, 1, 1],
-                    backgroundColor: [
-                        brandPrimary,
-                        "rgba(75,192,192,1)",
-                        "#FFCE56"
-                    ],
-                    hoverBackgroundColor: [
-                        brandPrimary,
-                        "rgba(75,192,192,1)",
-                        "#FFCE56"
-                    ]
-                }]
+            datasets: [{
+                data: [300, 50, 100],
+                borderWidth: [1, 1, 1],
+                backgroundColor: [
+                    brandPrimary,
+                    "rgba(75,192,192,1)",
+                    "#FFCE56"
+                ],
+                hoverBackgroundColor: [
+                    brandPrimary,
+                    "rgba(75,192,192,1)",
+                    "#FFCE56"
+                ]
+            }]
         }
     });
 
