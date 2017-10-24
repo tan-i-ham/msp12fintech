@@ -14,7 +14,16 @@
     align-content: center;
 }
 
-.left-rollbacks {
-    color: red;
-    background: pink;
+#left-rollbacks>div {
+    /* background: pink; */
+    background-color: #82da9c;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#right-rollbacks>div {
+    /* background: pink; */
+    /* background-color: #33b35a; */
+    border: 2px dashed black;
+    border-radius: 5px;
 }
