@@ -14,7 +14,8 @@
     <link href='example/example.css' rel='stylesheet' type='text/css' />
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script> -->
 
-
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Google fonts - Roboto -->
@@ -23,8 +24,7 @@
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- jQuery Circle-->
     <link rel="stylesheet" href="css/grasp_mobile_progress_circle-1.0.0.min.css">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
+
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.ico">
     <!-- Font Awesome CDN-->
@@ -161,6 +161,7 @@
                 </div>
             </nav>
         </header>
+
         <!-- Counts Section -->
         <section class="dashboard-counts section-padding">
             <div class="container-fluid">
@@ -195,127 +196,173 @@
         </section>
 
 
-        <!-- Statistics Section-->
-        <section class="statistics section-padding section-no-padding-bottom">
-            <div class="container-fluid">
-                <div class="row d-flex align-items-stretch">
-                    <div class="col-xl-4 col-lg-4">
-                        <!-- Pie Chart-->
-                        <div class="wrapper project-progress">
-                            <h2 class="display h4">投資組合比重</h2>
-                            <div class="pie-chart">
-                                <canvas id="pieChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4">
-                        <!-- Monthly Usage-->
-                        <div class="wrapper data-usage">
-                            <h2 class="display h4">Monthly Usage</h2>
-                            <div class="row d-flex align-items-center">
-                                <div class="col-sm-6">
-                                    <div id="progress-circle" class="d-flex align-items-center justify-content-center"></div>
-                                </div>
-                                <div class="col-sm-6"><strong class="text-primary">80.56 Gb</strong><small>Current Plan</small><span>100 Gb Monthly</span></div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4">
-                        <!-- User Actibity-->
-                        <div class="wrapper user-activity">
-                            <h2 class="display h4">User Activity</h2>
-                            <div class="number">210</div>
-                            <h3 class="h4 display">Social Users</h3>
-                            <div class="progress">
-                                <div role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar bg-primary"></div>
-                            </div>
-                            <div class="page-statistics d-flex justify-content-between">
-                                <div class="page-visites"><span>Pages Visites</span><strong>230</strong></div>
-                                <div class="new-visites"><span>New Visites</span><strong>73.4%</strong></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Updates Section -->
         <section class="updates section-padding">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <!-- Recent Updates            -->
-                        <div class="wrapper recent-uodated">
-                            <div id="new-updates" class="card-header d-flex justify-content-between align-items-center">
-                                <h2 class="h5 display"><a data-toggle="collapse" data-parent="#accordion" href="#upadtes-box" aria-expanded="true" aria-controls="upadtes-box">News Updates</a></h2><i class="fa fa-angle-down"></i>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-7">
+
+                                <!-- Pie Chart-->
+                                <div class="wrapper project-progress">
+                                    <div id="project-progress" class="card-header d-flex justify-content-between align-items-center">
+                                        <h2 class="h5 display">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#activities-box" aria-expanded="true" aria-controls="activities-box">投資組合比重</a></h2>
+
+                                    </div>
+
+                                    <div class="pie-chart">
+                                        <canvas id="pieChart"></canvas>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="upadtes-box" role="tabpanel" class="collapse show">
-                                <ul class="news list-unstyled">
-                                    <!-- Item-->
-                                    <li class="d-flex justify-content-between">
-                                        <div class="left-col d-flex">
-                                            <div class="icon"><i class="icon-rss-feed"></i></div>
-                                            <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                                            </div>
-                                        </div>
-                                        <div class="right-col text-right">
-                                            <div class="update-date">24<span class="month">Jan</span></div>
-                                        </div>
-                                    </li>
-                                    <!-- Item-->
-                                    <li class="d-flex justify-content-between">
-                                        <div class="left-col d-flex">
-                                            <div class="icon"><i class="icon-rss-feed"></i></div>
-                                            <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                                            </div>
-                                        </div>
-                                        <div class="right-col text-right">
-                                            <div class="update-date">24<span class="month">Jan</span></div>
-                                        </div>
-                                    </li>
-                                    <!-- Item-->
-                                    <li class="d-flex justify-content-between">
-                                        <div class="left-col d-flex">
-                                            <div class="icon"><i class="icon-rss-feed"></i></div>
-                                            <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                                            </div>
-                                        </div>
-                                        <div class="right-col text-right">
-                                            <div class="update-date">24<span class="month">Jan</span></div>
-                                        </div>
-                                    </li>
-                                    <!-- Item-->
-                                    <li class="d-flex justify-content-between">
-                                        <div class="left-col d-flex">
-                                            <div class="icon"><i class="icon-rss-feed"></i></div>
-                                            <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                                            </div>
-                                        </div>
-                                        <div class="right-col text-right">
-                                            <div class="update-date">24<span class="month">Jan</span></div>
-                                        </div>
-                                    </li>
-                                    <!-- Item-->
-                                    <li class="d-flex justify-content-between">
-                                        <div class="left-col d-flex">
-                                            <div class="icon"><i class="icon-rss-feed"></i></div>
-                                            <div class="title">
-                                                <h3 class="h5">Lorem ipsum dolor sit amet.</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                                            </div>
-                                        </div>
-                                        <div class="right-col text-right">
-                                            <div class="update-date">24<span class="month">Jan</span></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                            <div class="col-lg-5"></div>
+
                         </div>
+
+                        <div id="spec" class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <!-- Recent Updates            -->
+                                <div class="wrapper recent-uodated">
+                                    <div id="new-updates" class="card-header d-flex justify-content-between align-items-center">
+                                        <h2 class="h5 display"><a data-toggle="collapse" data-parent="#accordion" href="#upadtes-box" aria-expanded="true" aria-controls="upadtes-box">News Updates</a></h2><i class="fa fa-angle-down"></i>
+                                    </div>
+                                    <div id="upadtes-box" role="tabpanel" class="collapse show">
+                                        <ul class="news list-unstyled">
+                                            <!-- Item-->
+                                            <li class="d-flex justify-content-between">
+                                                <div class="left-col d-flex">
+                                                    <div class="icon"><i class="icon-rss-feed"></i></div>
+                                                    <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-col text-right">
+                                                    <div class="update-date">24<span class="month">Jan</span></div>
+                                                </div>
+                                            </li>
+                                            <!-- Item-->
+                                            <li class="d-flex justify-content-between">
+                                                <div class="left-col d-flex">
+                                                    <div class="icon"><i class="icon-rss-feed"></i></div>
+                                                    <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-col text-right">
+                                                    <div class="update-date">24<span class="month">Jan</span></div>
+                                                </div>
+                                            </li>
+                                            <!-- Item-->
+                                            <li class="d-flex justify-content-between">
+                                                <div class="left-col d-flex">
+                                                    <div class="icon"><i class="icon-rss-feed"></i></div>
+                                                    <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-col text-right">
+                                                    <div class="update-date">24<span class="month">Jan</span></div>
+                                                </div>
+                                            </li>
+                                            <!-- Item-->
+                                            <li class="d-flex justify-content-between">
+                                                <div class="left-col d-flex">
+                                                    <div class="icon"><i class="icon-rss-feed"></i></div>
+                                                    <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-col text-right">
+                                                    <div class="update-date">24<span class="month">Jan</span></div>
+                                                </div>
+                                            </li>
+                                            <!-- Item-->
+                                            <li class="d-flex justify-content-between">
+                                                <div class="left-col d-flex">
+                                                    <div class="icon"><i class="icon-rss-feed"></i></div>
+                                                    <div class="title">
+                                                        <h3 class="h5">Lorem ipsum dolor sit amet.</h3>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-col text-right">
+                                                    <div class="update-date">24<span class="month">Jan</span></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recent Activities                            -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="wrapper recent-activities">
+                                    <div id="recent-activities" class="card-header d-flex justify-content-between align-items-center">
+                                        <h2 class="h5 display"><a data-toggle="collapse" data-parent="#accordion" href="#activities-box" aria-expanded="true" aria-controls="activities-box">Recent Activities</a></h2><a data-toggle="collapse" data-parent="#accordion" href="#activities-box"
+                                            aria-expanded="true" aria-controls="activities-box"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                    <div id="activities-box" role="tabpanel" class="collapse show">
+                                        <ul class="activities list-unstyled">
+                                            <!-- Item-->
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-4 date-holder text-right">
+                                                        <div class="icon"><i class="icon-clock"></i></div>
+                                                        <div class="date"> <span>6:00 am</span><span class="text-info">6 hours ago</span></div>
+                                                    </div>
+                                                    <div class="col-8 content"><strong>Meeting</strong>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- Item-->
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-4 date-holder text-right">
+                                                        <div class="icon"><i class="icon-clock"></i></div>
+                                                        <div class="date"> <span>6:00 am</span><span class="text-info">6 hours ago</span></div>
+                                                    </div>
+                                                    <div class="col-8 content"><strong>Meeting</strong>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- Item-->
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-4 date-holder text-right">
+                                                        <div class="icon"><i class="icon-clock"></i></div>
+                                                        <div class="date"> <span>6:00 am</span><span class="text-info">6 hours ago</span></div>
+                                                    </div>
+                                                    <div class="col-8 content"><strong>Meeting</strong>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- Item-->
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-4 date-holder text-right">
+                                                        <div class="icon"><i class="icon-clock"></i></div>
+                                                        <div class="date"> <span>6:00 am</span><span class="text-info">6 hours ago</span></div>
+                                                    </div>
+                                                    <div class="col-8 content"><strong>Meeting</strong>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
                     </div>
+
                     <!-- Daily Feed-->
                     <div class="col-lg-4 col-md-6">
                         <div class="wrapper daily-feeds">
@@ -393,67 +440,6 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Recent Activities                            -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="wrapper recent-activities">
-                            <div id="recent-activities" class="card-header d-flex justify-content-between align-items-center">
-                                <h2 class="h5 display"><a data-toggle="collapse" data-parent="#accordion" href="#activities-box" aria-expanded="true" aria-controls="activities-box">Recent Activities</a></h2><a data-toggle="collapse" data-parent="#accordion" href="#activities-box"
-                                    aria-expanded="true" aria-controls="activities-box"><i class="fa fa-angle-down"></i></a>
-                            </div>
-                            <div id="activities-box" role="tabpanel" class="collapse show">
-                                <ul class="activities list-unstyled">
-                                    <!-- Item-->
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-4 date-holder text-right">
-                                                <div class="icon"><i class="icon-clock"></i></div>
-                                                <div class="date"> <span>6:00 am</span><span class="text-info">6 hours ago</span></div>
-                                            </div>
-                                            <div class="col-8 content"><strong>Meeting</strong>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- Item-->
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-4 date-holder text-right">
-                                                <div class="icon"><i class="icon-clock"></i></div>
-                                                <div class="date"> <span>6:00 am</span><span class="text-info">6 hours ago</span></div>
-                                            </div>
-                                            <div class="col-8 content"><strong>Meeting</strong>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- Item-->
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-4 date-holder text-right">
-                                                <div class="icon"><i class="icon-clock"></i></div>
-                                                <div class="date"> <span>6:00 am</span><span class="text-info">6 hours ago</span></div>
-                                            </div>
-                                            <div class="col-8 content"><strong>Meeting</strong>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- Item-->
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-4 date-holder text-right">
-                                                <div class="icon"><i class="icon-clock"></i></div>
-                                                <div class="date"> <span>6:00 am</span><span class="text-info">6 hours ago</span></div>
-                                            </div>
-                                            <div class="col-8 content"><strong>Meeting</strong>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
