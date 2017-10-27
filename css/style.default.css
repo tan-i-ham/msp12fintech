@@ -113,6 +113,7 @@ h2 {
 
 .breadcrumb-holder {
     background: #eceeef;
+    margin-bottom: 1.5em;
 }
 
 .breadcrumb-holder .breadcrumb {
@@ -247,7 +248,8 @@ button {
 }
 
 .section-padding {
-    padding: 50px 0;
+    padding: 30px 0 10px 0;
+    /* border: 2px solid red; */
 }
 
 .section-no-padding-bottom {
